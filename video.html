@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png">
+    <title>Sent A Message For Bithi</title>
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="nav_wrapper">
+                        <a href="#">Arafat</a>
+                        <p href="#">Arafat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h4 class="card-header text-center">Video Gallery</h4>
+        </div>
+        <div class="video_container row">
+            <div class="col-md-3 col-sm-6 mb-3 video">
+                <video controls src="video/video_1.mp4"></video>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 video">
+                <video src="video/video_2.mp4"></video>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 video">
+                <video src="video/video_3.mp4"></video>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3 video">
+                <video src="video/video_4.mp4"></video>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var video = document.querySelectorAll('.video');
+        video.forEach(play => play.addEventListener('click', () => {
+            play.classList.toggle('active');
+
+            if(play.paused){
+                play.play();
+            }else if (play.play){
+                // play.pouse();
+                // play.currentTime =0;
+            }
+        }));
+
+    </script>
+
+
+
+    
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
