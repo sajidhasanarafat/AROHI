@@ -8,4 +8,7 @@
     div.full_img {
         width: 90%;
     }
+    .col-md-3{
+        width:50%;
+    }
 }
