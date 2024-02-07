@@ -1,0 +1,11 @@
+
+@media (max-width:800px){
+    div.full_img {
+        width: 70%;
+    }
+}
+@media (max-width:576px){
+    div.full_img {
+        width: 90%;
+    }
+}
