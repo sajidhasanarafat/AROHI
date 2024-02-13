@@ -10,6 +10,10 @@
     width: 100%;
     height: 350px;
 }
+.ytp-embed .ytp-chrome-bottom {
+    height: 40px;
+    display: none;
+}
 a.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
     display: none !important;
 }
